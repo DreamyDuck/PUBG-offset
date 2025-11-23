@@ -20,4 +20,5 @@ Use everything here **at your own discretion and for educational purposes only**
 ## Credits
 - https://github.com/ufrisk/pcileech
 - Scarlet DMA (https://scarlet.technology/)
+- DoubleAI 
 - @breadthedev
