@@ -1,0 +1,11 @@
+DWORD Decrypt::CIndex(DWORD value) {
+  DWORD ecx = value ^ 0x426749E3;
+  DWORD edx = ecx;
+  edx = _rotr(edx, 0x0C);
+  DWORD eax = ecx;
+  eax = eax << 0x04;
+  eax = eax & 0xFFFF0000;
+  eax = eax ^ edx;
+  eax = eax ^ 0xF901B4A6;
+  return eax;
+}
