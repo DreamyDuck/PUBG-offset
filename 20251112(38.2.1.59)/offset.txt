@@ -1,0 +1,215 @@
+// Process ID: 11424
+// Module Address: 7FF607800000
+// https://github.com/DreamyDuck/PUBG-offset/
+// Time: 2025-11-12 11:07:10
+// --------------------------------------------- 
+namespace Offset {
+  constexpr uint64_t XenuineDecrypt = 0xF3A4328;
+  constexpr uint64_t UWorld = 0x10A58568;
+  constexpr uint64_t GNames = 0x10CA0170;
+  constexpr uint64_t GNamesPtr = 0x0;
+  constexpr uint64_t ChunkSize = 0x3EEC;
+  constexpr uint64_t GObjects = 0x10A19890;
+  constexpr uint64_t CurrentLevel = 0x670;
+  constexpr uint64_t Actors = 0x128;
+  constexpr uint64_t ActorsForGC = 0x2B0;
+  constexpr uint64_t GameInstance = 0x1D0;
+  constexpr uint64_t GameState = 0x180;
+  constexpr uint64_t LocalPlayer = 0xD0;
+  constexpr uint64_t PlayerController = 0x30;
+  constexpr uint64_t AcknowledgedPawn = 0x4A8;
+  constexpr uint64_t PlayerCameraManager = 0x4D0;
+
+  constexpr uint64_t ObjID = 0xC;
+  constexpr uint64_t DecryptNameIndexRor = 0x1;
+  constexpr uint64_t DecryptNameIndexXorKey1 = 0x795DBCD8;
+  constexpr uint64_t DecryptNameIndexXorKey2 = 0xECED5D70;
+  constexpr uint64_t DecryptNameIndexXorKey3 = 0x7F0000;
+  constexpr uint64_t DecryptNameIndexRval = 0x19;
+  constexpr uint64_t DecryptNameIndexSval = 0x17;
+  constexpr uint64_t DecryptNameIndexDval = 0x9;
+
+  constexpr uint64_t ViewTarget = 0x460;
+  constexpr uint64_t CameraCacheLocation = 0x1640;
+  constexpr uint64_t CameraCacheRotation = 0x165C;
+  constexpr uint64_t CameraCacheFOV = 0x1670;
+
+  constexpr uint64_t LastTeamNum = 0x1C48;
+  constexpr uint64_t TeamNumber = 0x6F0;
+
+  constexpr uint64_t MyHUD = 0x4C8;
+  constexpr uint64_t BlockInputWidgetList = 0x5B8;
+  constexpr uint64_t bShowMouseCursor = 0x658;
+  constexpr uint64_t ComponentLocation = 0x310;
+  constexpr uint64_t ComponentToWorld = 0x300;
+  constexpr uint64_t CharacterState = 0x14D0;
+  constexpr uint64_t CharacterName = 0x1040;
+  constexpr uint64_t CharacterMovement = 0xB8;
+  constexpr uint64_t WorldToMap = 0x754;
+  constexpr uint64_t LayoutData = 0x38;
+  constexpr uint64_t Offsets = 0x0;
+  constexpr uint64_t Alignment = 0x20;
+  constexpr uint64_t Visibility = 0xA1;
+  constexpr uint64_t SelectMinimapSizeIndex = 0x5C8;
+  constexpr uint64_t Slot = 0x30;
+  constexpr uint64_t WidgetStateMap = 0x540;
+
+  constexpr uint64_t FeatureRepObject = 0xD10;
+  constexpr uint64_t SafetyZonePosition = 0x138;
+  constexpr uint64_t SafetyZoneRadius = 0x12C;
+  constexpr uint64_t BlueZoneRadius = 0x128;
+  constexpr uint64_t BlueZonePosition = 0x11C;
+  constexpr uint64_t NumAliveTeams = 0x538;
+
+  constexpr uint64_t HeaFlag = 0x370;
+  constexpr uint64_t Health1 = 0x998;
+  constexpr uint64_t Health2 = 0x988;
+  constexpr uint64_t Health3 = 0x96C;
+  constexpr uint64_t Health4 = 0x958;
+  constexpr uint64_t Health5 = 0x96D;
+  constexpr uint64_t Health6 = 0x968;
+  constexpr uint64_t Health_keys0 = 0xCEC7A599;
+  constexpr uint64_t Health_keys1 = 0x9B63B209;
+  constexpr uint64_t Health_keys2 = 0xCACF6DBC;
+  constexpr uint64_t Health_keys3 = 0x9384857;
+  constexpr uint64_t Health_keys4 = 0xD0911D0A;
+  constexpr uint64_t Health_keys5 = 0x23DDAB2B;
+  constexpr uint64_t Health_keys6 = 0x94557C8;
+  constexpr uint64_t Health_keys7 = 0xBC38B021;
+  constexpr uint64_t Health_keys8 = 0xBAB7A58;
+  constexpr uint64_t Health_keys9 = 0xA9EF0987;
+  constexpr uint64_t Health_keys10 = 0xE2751CB0;
+  constexpr uint64_t Health_keys11 = 0x9E8ADBCC;
+  constexpr uint64_t Health_keys12 = 0xBDD0CCD5;
+  constexpr uint64_t Health_keys13 = 0x9935707;
+  constexpr uint64_t Health_keys14 = 0x57099E38;
+  constexpr uint64_t Health_keys15 = 0xE4D12AD3;
+  constexpr uint64_t GroggyHealth = 0x13E0;
+
+  constexpr uint64_t PlayerArray = 0x418;
+  constexpr uint64_t AccountId = 0x940;
+  constexpr uint64_t PlayerName = 0x438;
+  constexpr uint64_t PlayerStatusType = 0x420;
+  constexpr uint64_t SquadMemberIndex = 0x70C;
+  constexpr uint64_t PlayerState = 0x430;
+  constexpr uint64_t PlayerStatistics = 0x6F4;
+  constexpr uint64_t DamageDealtOnEnemy = 0x53C;
+  constexpr uint64_t SpectatedCount = 0x10E0;
+
+  constexpr uint64_t PartnerLevel = 0x92E;
+  constexpr uint64_t SurvivalTier = 0xC48;
+  constexpr uint64_t SurvivalLevel = 0xC4C;
+
+  constexpr uint64_t CharacterClanInfo = 0x8A8;
+
+  constexpr uint64_t CurrentWeaponIndex = 0x309;
+  constexpr uint64_t WeaponProcessor = 0x990;
+  constexpr uint64_t EquippedWeapons = 0x1F8;
+  constexpr uint64_t WeaponTrajectoryData = 0x10E8;
+  constexpr uint64_t TrajectoryGravityZ = 0x10A4;
+  constexpr uint64_t FiringAttachPoint = 0x8B0;
+  constexpr uint64_t ScopingAttachPoint = 0xDA0;
+  constexpr uint64_t TrajectoryConfig = 0x100;
+  constexpr uint64_t BallisticCurve = 0x28;
+  constexpr uint64_t FloatCurves = 0x30;
+  constexpr uint64_t Mesh3P = 0x800;
+
+  constexpr uint64_t Keys = 0x60;
+
+  constexpr uint64_t AttachedStaticComponentMap = 0x1508;
+
+  constexpr uint64_t WeaponConfig_WeaponClass = 0x540;
+  constexpr uint64_t ElapsedCookingTime = 0xBE0;
+
+  constexpr uint64_t PlayerInput = 0x548;
+  constexpr uint64_t InputAxisProperties = 0x130;
+
+  constexpr uint64_t LastUpdateVelocity = 0x3D0;
+  constexpr uint64_t Mesh = 0x470;
+
+  constexpr uint64_t RootComponent = 0x3A8;
+  constexpr uint64_t StaticMesh = 0xAC8;
+  constexpr uint64_t Eyes = 0x73C;
+  constexpr uint64_t bAlwaysCreatePhysicsState = 0x478;
+
+  constexpr uint64_t VehicleMovement = 0x478;
+  constexpr uint64_t VehicleRiderComponent = 0x1FC0;
+  constexpr uint64_t ReplicatedMovement = 0x68;
+  constexpr uint64_t LastVehiclePawn = 0x260;
+  constexpr uint64_t SeatIndex = 0x220;
+
+  constexpr uint64_t Wheels = 0x318;
+  constexpr uint64_t WheelLocation = 0xF8;
+  constexpr uint64_t DampingRate = 0x4C;
+  constexpr uint64_t ShapeRadius = 0x40;
+
+  constexpr uint64_t ItemPackageItems = 0x598;
+  constexpr uint64_t DroppedItemGroup = 0x140;
+  constexpr uint64_t DroppedItemGroupUItem = 0x860;
+
+  constexpr uint64_t AttachedItems = 0x858;
+  constexpr uint64_t WeaponAttachmentData = 0x128;
+  constexpr uint64_t ItemTable = 0xA8;
+  constexpr uint64_t ItemID = 0x268;
+  constexpr uint64_t DroppedItem = 0x460;
+
+  constexpr uint64_t AnimScriptInstance = 0xE10;
+  constexpr uint64_t PreEvalPawnState = 0x6F8;
+
+  constexpr uint64_t bIsScoping_CP = 0x91D;
+  constexpr uint64_t bIsReloading_CP = 0x7FD;
+  constexpr uint64_t RecoilADSRotation_CP = 0x8E4;
+  constexpr uint64_t ControlRotation_CP = 0x714;
+  constexpr uint64_t LeanLeftAlpha_CP = 0x75C;
+  constexpr uint64_t LeanRightAlpha_CP = 0x760;
+  constexpr uint64_t CurrentAmmoData = 0xD84;
+
+  constexpr uint64_t StaticSockets = 0xC0;
+  constexpr uint64_t StaticSocketName = 0x28;
+  constexpr uint64_t StaticRelativeScale = 0x48;
+  constexpr uint64_t StaticRelativeLocation = 0x30;
+  constexpr uint64_t StaticRelativeRotation = 0x3C;
+
+  constexpr uint64_t InputYawScale = 0x64C;
+
+  constexpr uint64_t AimOffsets = 0x1A18;
+
+  constexpr uint64_t AntiCheatCharacterSyncManager = 0x1000;
+
+  constexpr uint64_t TimeSeconds = 0x850;
+  constexpr uint64_t TimeTillExplosion = 0x82C;
+  constexpr uint64_t ExplodeState = 0x630;
+  constexpr uint64_t TrainingMapGrid = 0x5B0;
+  constexpr uint64_t MortarRotation = 0x530;
+  constexpr uint64_t MortarEntity = 0xA0;
+
+  constexpr uint64_t MapGrid_Map = 0x4A8;
+  constexpr uint64_t Gender = 0xAB8;
+
+  constexpr uint64_t MouseX = 0x4914;
+  constexpr uint64_t MouseY = 0x4915;
+
+  constexpr uint64_t SPOOFCALL = 0x24547E5;
+  constexpr uint64_t LineTraceSingle = 0xB895FEC;
+  constexpr uint64_t HOOK = 0x1054C6B0;
+  constexpr uint64_t HOOK_TWO = 0xC0C4F16;
+
+  constexpr uint64_t InventoryFacade = 0x2698;
+  constexpr uint64_t Inventory = 0x418;
+  constexpr uint64_t InventoryItems = 0x5A0;
+  constexpr uint64_t InventoryItemCount = 0x5A8;
+  constexpr uint64_t InventoryItemTagItemCount = 0x38;
+
+  constexpr uint64_t VehicleCommonComponent = 0xB40;
+  constexpr uint64_t FloatingVehicleCommonComponent = 0x4E8;
+  constexpr uint64_t VehicleFuel = 0x2D0;
+  constexpr uint64_t VehicleFuelMax = 0x2D4;
+  constexpr uint64_t VehicleHealth = 0x2C8;
+  constexpr uint64_t VehicleHealthMax = 0x2CC;
+
+  constexpr uint64_t PhysxSDK = 0x105CDE88;
+  constexpr uint64_t PhysicsScene = 0x208;
+  constexpr uint64_t mPhysXScene = 0xD0;
+  constexpr uint64_t rigid_dynamics = 0x3B98;
+  constexpr uint64_t Unreal_Engine = 0x10A54870;
+}

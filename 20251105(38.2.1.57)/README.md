@@ -6,3 +6,9 @@
 
 ## Offset
 - [Offset](251105(38.2.1.57)/offset.txt)
+
+## Extra
+> Use this if aimbot doesnt works
+```
+constexpr uint64_t WeaponProcessor = 0x9A8
+```

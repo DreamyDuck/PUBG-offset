@@ -1,6 +1,6 @@
 // Process ID: 15392
 // Module Address: 7FF7B57C0000
-// DreamyDuck Auto Decrypt
+// https://github.com/DreamyDuck/PUBG-offset/
 // Time: 2025-11-05 12:50:03
 // ---------------------------------------------
 namespace Offset {
