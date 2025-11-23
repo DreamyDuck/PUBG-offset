@@ -5,6 +5,7 @@
 Game updates usually occur every Wednesday; offset and decryption pushes will be push within a few hours.
 > [!NOTE]
 > Contact for fully API version (sponsor).
+
 > [!TIP]
 > Skilled in coding or reverse engineering? Reach out for an easy side income opportunity.
 
