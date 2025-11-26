@@ -106,7 +106,7 @@ constexpr uint64_t CharacterClanInfo = 0x8C8;
 constexpr uint64_t EquippedWeapons = 0x1F8;
 constexpr uint64_t WeaponProcessor = 0x9B8;
 constexpr uint64_t CurrentWeaponIndex = 0x309;
-constexpr uint64_t WeaponTrajectoryData = 0x;
+constexpr uint64_t WeaponTrajectoryData = 0x1168;
 constexpr uint64_t TrajectoryGravityZ = 0x1124;
 constexpr uint64_t FiringAttachPoint = 0x8D0;
 constexpr uint64_t ScopingAttachPoint = 0xE20;
@@ -213,4 +213,5 @@ constexpr uint64_t PhysicsScene = 0x9C8;
 constexpr uint64_t mPhysXScene = 0xD0;
 constexpr uint64_t rigid_dynamics = 0x3B98;
 constexpr uint64_t Unreal_Engine = 0x10B823F0;
+
 }
