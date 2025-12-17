@@ -1,0 +1,5 @@
+DWORD Decrypt::CIndex(DWORD value)
+{  
+    DWORD ecx = ((value ^ 0xA3B2CC76) << 6) & 0xFFFF0000 ^ _rotr(value ^ 0xA3B2CC76,10) ^ 0x18A2BF21;
+    return ecx;
+}
